@@ -1,23 +1,64 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 const Menu = ({ state }) => {
   let menu = useRef(null);
-  console.log(menu);
+  let secondMenu = useRef(null);
+  let menuBg = useRef(null);
+  let cityBg = useRef(null);
+  let number1 = useRef(null);
+  let number2 = useRef(null);
+  let number3 = useRef(null);
+  let message = useRef(null);
+
   useEffect(() => {
     if (state.isClicked === false) {
-      menu.style.display = "none";
+      gsap.to([secondMenu, menuBg], {
+        duration: 0.6,
+        ease: "Power1.easeOut",
+        height: 0,
+        stagger: {
+          amount: 0.12
+        }
+      });
+      gsap.to(menu, {
+        duration: 2,
+        css: { display: "none" }
+      });
     } else if (
       state.isClicked === true ||
       (state.isClicked === true && state.initial === null)
     ) {
-      menu.style.display = "block";
+      gsap.to(menu, {
+        duration: 0,
+        css: { display: "block" }
+      });
+      gsap.to([menuBg, secondMenu], {
+        duration: 0,
+        opacity: 1,
+        height: "100%"
+      });
+      staggerEffect(menuBg, secondMenu);
     }
-  });
+  }, [state]);
+
+  const staggerEffect = (dom1, dom2) => {
+    gsap.to([dom1, dom2], {
+      duration: 0.5,
+      height: 0,
+      transformOrigin: "right top",
+      ease: "Power1.easeOut",
+      skewY: 1.5,
+      stagger: {
+        ammount: 0.2
+      }
+    });
+  };
   return (
     <div className="menu-hamburger" ref={el => (menu = el)}>
-      <div className="menu-background"></div>
-      <div className="menu-layer">
+      <div className="menu-background" ref={el => (menuBg = el)}></div>
+      <div className="menu-layer" ref={el => (secondMenu = el)}>
         <div className="city-bg"></div>
         <div className="container">
           <div className="wrapper">
@@ -25,17 +66,23 @@ const Menu = ({ state }) => {
               <nav>
                 <ul>
                   <li>
-                    <Link to="/solutions">Solutions</Link>
+                    <Link to="/solutions" ref={el => (number1 = el)}>
+                      Solutions
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/shop">Shop</Link>
+                    <Link to="/shop" ref={el => (number2 = el)}>
+                      Shop
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" ref={el => (number3 = el)}>
+                      Contact
+                    </Link>
                   </li>
                 </ul>
               </nav>
-              <div className="message">
+              <div className="message" ref={el => (message = el)}>
                 <h4>Our dreams</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
