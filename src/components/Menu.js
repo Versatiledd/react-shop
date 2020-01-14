@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({ state }) => {
+  let menu = useRef(null);
+  console.log(menu);
+  useEffect(() => {
+    if (state.isClicked === false) {
+      menu.style.display = "none";
+    } else if (
+      state.isClicked === true ||
+      (state.isClicked === true && state.initial === null)
+    ) {
+      menu.style.display = "block";
+    }
+  });
   return (
-    <div className="menu-hamburger">
+    <div className="menu-hamburger" ref={el => (menu = el)}>
       <div className="menu-background"></div>
       <div className="menu-layer">
         <div className="city-bg"></div>
