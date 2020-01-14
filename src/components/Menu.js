@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="menu-hamburger">
-      <div className="manu-background"></div>
-      <div className="manu-layer">
+      <div className="menu-background"></div>
+      <div className="menu-layer">
         <div className="city-bg"></div>
         <div className="container">
           <div className="wrapper">
@@ -33,8 +33,7 @@ const Menu = () => {
                 </p>
               </div>
               <div className="location">
-                Kraje w których jesteśmy:
-                <span>Polska</span>
+                Kraje : <span>Polska</span>
                 <span>Tokio</span>
                 <span>Iran</span>
                 <span>Portugalia</span>
