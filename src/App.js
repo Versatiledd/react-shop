@@ -16,7 +16,6 @@ function App() {
                 <Route exact path="/solutions" component={Solutions} />
                 <Route exact path="/shop" component={Shop} />
                 <Route exact path="/contact" component={Contact} />
-                <Route exact path="/" component={Home} />
               </Switch>
             </div>
           </div>
@@ -27,7 +26,18 @@ function App() {
 }
 
 function Home() {
-  return <p>To będzie strona główna naszej aplikacji</p>;
+  return (
+    <div className="container">
+      <div className="wrapper">
+        <h4>
+          <b> Creative Code </b> lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Earum quos saepe sint itaque, facere voluptatem
+          perferendis excepturi exercitationem in ad asperiores aperiam et minus
+          accusamus sequi deleniti ut ratione error.
+        </h4>
+      </div>
+    </div>
+  );
 }
 function Solutions() {
   return <p>Rozwiązania techniczne</p>;
