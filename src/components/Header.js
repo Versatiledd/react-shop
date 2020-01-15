@@ -43,7 +43,7 @@ const Header = ({ history }) => {
     setDisabled(!disabled);
     setTimeout(() => {
       setDisabled(false);
-    }, 1000);
+    }, 800);
   };
   return (
     <header>

@@ -15,15 +15,15 @@ const Menu = ({ state }) => {
   useEffect(() => {
     if (state.isClicked === false) {
       gsap.to([secondMenu, menuBg], {
-        duration: 0.6,
-        ease: "Power1.easeOut",
+        duration: 0.9,
         height: 0,
+        ease: "Power1.easeOut",
         stagger: {
-          amount: 0.12
+          amount: 0.07
         }
       });
       gsap.to(menu, {
-        duration: 2,
+        duration: 1,
         css: { display: "none" }
       });
     } else if (
@@ -44,14 +44,13 @@ const Menu = ({ state }) => {
   }, [state]);
 
   const staggerEffect = (dom1, dom2) => {
-    gsap.to([dom1, dom2], {
-      duration: 0.5,
+    gsap.from([dom1, dom2], {
+      duration: 0.9,
       height: 0,
-      transformOrigin: "right top",
       ease: "Power1.easeOut",
-      skewY: 1.5,
+      transformOrigin: "right top",
       stagger: {
-        ammount: 0.2
+        amount: 0.1
       }
     });
   };

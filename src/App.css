@@ -24,7 +24,7 @@
 
 .home p {
   font-size: 21px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -88,7 +88,7 @@ header .container,
 }
 
 .menu-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -192,5 +192,5 @@ header .container,
   cursor: pointer;
   font-weight: 500;
   margin: 0 30px;
-  transition: .4s ease-in;
+  transition: 0.4s ease-in;
 }
