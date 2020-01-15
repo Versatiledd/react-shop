@@ -40,6 +40,7 @@ const Menu = ({ state }) => {
         height: "100%"
       });
       staggerEffect(menuBg, secondMenu);
+      fadeInUp(message);
     }
   }, [state]);
 
@@ -49,9 +50,19 @@ const Menu = ({ state }) => {
       height: 0,
       ease: "Power1.easeOut",
       transformOrigin: "right top",
+      skewY: 2.5,
       stagger: {
         amount: 0.1
       }
+    });
+  };
+  const fadeInUp = dom1 => {
+    gsap.from(dom1, {
+      y: 70,
+      duration: 1,
+      opacity: 0,
+      delay: 0.3,
+      ease: "Power1.easeOut"
     });
   };
   return (
