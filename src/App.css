@@ -220,11 +220,10 @@ header .container,
   transition: 0.4s ease-in;
 }
 
-@media(min-width: 320px) and (orientation: portrait) {
+@media (min-width: 320px) and (orientation: portrait) {
   .wrapper {
     padding: 0 25px;
   }
-
   .home h4 {
     font-size: 18px;
     margin-top: 30px;
@@ -236,9 +235,8 @@ header .container,
     display: flex;
     flex-direction: column;
     top: 70px;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
-
   }
 
   .menu-links nav {
@@ -261,13 +259,41 @@ header .container,
   .message {
     width: 100%;
   }
+
+  .menu-links .location {
+    display: none;
+  }
+  .location span {
+    margin: 0;
+  }
+
+  .location span:first-child {
+    margin-left: 0;
+  }
 }
-
-
-@media(min-width: 1366px) and (orientation: landscape) {
+@media (min-width: 360px) and (orientation: portrait) {
+  .menu-links .location {
+    display: flex;
+  }
+  .location span {
+    align-self: center;
+    margin: 0 5px;
+  }
+}
+@media (min-width: 411px) and (orientation: portrait) {
+  .wrapper .menu-links {
+    height: 60vh;
+  }
+  .menu-links .location {
+    bottom: -40%;
+  }
+  .message p {
+    line-height: 32px;
+  }
+}
+@media (min-width: 1366px) and (orientation: landscape) {
   .menu-layer .wrapper {
     max-width: 1300px;
     margin: 0 auto;
   }
-
 }

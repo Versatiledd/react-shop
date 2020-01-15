@@ -16,7 +16,7 @@ const ItSection = [
     image: Deploy
   },
   {
-    name: "DataScience",
+    name: "Data Science",
     image: DataScience
   },
   {
