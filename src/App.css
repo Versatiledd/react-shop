@@ -115,6 +115,31 @@ header .container,
   right: 0;
   left: 0;
   bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: moveImage 5s infinite;
+}
+
+@keyframes moveImage {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 30% 10%;
+  }
+
+  50% {
+    background-position: 24% 15%;
+  }
+
+  75% {
+    background-position: 15% 22%;
+  }
+
+  100% {
+    background-position: 60% 0%;
+  }
 }
 
 .menu-layer .wrapper {
@@ -236,4 +261,13 @@ header .container,
   .message {
     width: 100%;
   }
+}
+
+
+@media(min-width: 1366px) and (orientation: landscape) {
+  .menu-layer .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
 }
