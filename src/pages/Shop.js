@@ -3,7 +3,7 @@ import { ProductConsumer } from "../context/context";
 import "../styles/shop.css";
 
 function Shop() {
-  return <ProductConsumer>{value => <h2>{value}</h2>}</ProductConsumer>;
+  return <ProductConsumer>{value => console.log(value)}</ProductConsumer>;
 }
 
 export default Shop;
