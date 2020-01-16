@@ -271,6 +271,9 @@ header .container,
   .location span:first-child {
     margin-left: 0;
   }
+  .menu-links .location {
+    font-size: 19px;
+  }
 }
 @media (min-width: 360px) and (orientation: portrait) {
   .menu-links .location {
@@ -325,12 +328,145 @@ header .container,
     justify-content: space-around;
   }
   .menu-links .location {
+    font-size: 25px;
     bottom: 0;
   }
 }
+@media (min-width: 1024px) and (orientation: portrait) {
+  .menu button {
+    font-size: 32px;
+  }
+  .logo a {
+    font-size: 32px;
+  }
+  .wrapper .menu-links {
+    height: 85vh;
+  }
+  .message p {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  .message h4 {
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+  .menu-links .location {
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .menu-links .location {
+    font-size: 35px;
+    bottom: 0;
+  }
+  .menu-links ul li {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .wrapper .menu-links {
+    top: 70px;
+  }
+  .menu-links ul li {
+    width: 240px;
+    height: 40px;
+    font-size: 30px;
+    padding: 30px 0;
+  }
+  .message h4 {
+    font-size: 23px;
+  }
+  .message p {
+    font-size: 16px;
+  }
+  .menu-links .location {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    bottom: -56px;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .wrapper .menu-links {
+    top: 70px;
+  }
+  .menu-links ul li {
+    width: 240px;
+    height: 40px;
+    font-size: 30px;
+    padding: 30px 0;
+  }
+  .message h4 {
+    font-size: 23px;
+  }
+  .message p {
+    font-size: 16px;
+  }
+  .menu-links .location {
+    bottom: -80px;
+  }
+}
+@media (min-width: 731px) and (orientation: landscape) {
+  .wrapper .menu-links {
+    top: 100px;
+  }
+  .menu-links .location {
+    bottom: -100px;
+  }
+}
+
+@media (min-width: 812px) and (orientation: landscape) {
+  .menu-links .location {
+    bottom: -75px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .menu-layer .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .wrapper .menu-links {
+    height: 65%;
+  }
+  .menu-links nav {
+    height: 100%;
+  }
+  .menu-links nav ul {
+    position: relative;
+    top: 80px;
+    padding: 0 100px;
+  }
+  .menu-links nav ul li {
+    font-size: 50px;
+    padding: 50px 0;
+  }
+  .message h4 {
+    font-size: 30px;
+  }
+  .message p {
+    font-size: 20px;
+  }
+  .menu-links .location {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 1366px) and (orientation: landscape) {
   .menu-layer .wrapper {
     max-width: 1300px;
     margin: 0 auto;
+  }
+  .menu-links nav ul {
+    top: 180px;
   }
 }
