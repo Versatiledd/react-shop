@@ -6,6 +6,9 @@ import "../styles/featured-products.css";
 export default function Featured() {
   return (
     <section className="featured-products">
+      <h3 className="featured-title">
+        <span> Najnowsze</span> kursy!
+      </h3>
       <div className="container-featured">
         <ProductConsumer>
           {value => {
