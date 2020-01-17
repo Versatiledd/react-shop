@@ -109,6 +109,22 @@ const Menu = ({ state }) => {
       opacity: 0
     });
   };
+  const handleHover = e => {
+    gsap.to(e.target, {
+      duration: 0.2,
+      y: 1,
+      ease: "Power1.easeOut",
+      skewX: 3
+    });
+  };
+  const handleHoverEnd = e => {
+    gsap.to(e.target, {
+      duration: 0.2,
+      y: -1,
+      ease: "Power1.easeOut",
+      skewX: 0
+    });
+  };
   return (
     <div className="menu-hamburger" ref={el => (menu = el)}>
       <div className="menu-background" ref={el => (menuBg = el)}></div>
@@ -119,17 +135,32 @@ const Menu = ({ state }) => {
             <nav>
               <ul>
                 <li>
-                  <Link to="/solutions" ref={el => (number1 = el)}>
+                  <Link
+                    onMouseEnter={e => handleHover(e)}
+                    onMouseOut={e => handleHoverEnd(e)}
+                    to="/solutions"
+                    ref={el => (number1 = el)}
+                  >
                     Solutions
                   </Link>
                 </li>
                 <li>
-                  <Link to="/shop" ref={el => (number2 = el)}>
+                  <Link
+                    onMouseEnter={e => handleHover(e)}
+                    onMouseOut={e => handleHoverEnd(e)}
+                    to="/shop"
+                    ref={el => (number2 = el)}
+                  >
                     Shop
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" ref={el => (number3 = el)}>
+                  <Link
+                    onMouseEnter={e => handleHover(e)}
+                    onMouseOut={e => handleHoverEnd(e)}
+                    to="/contact"
+                    ref={el => (number3 = el)}
+                  >
                     Contact
                   </Link>
                 </li>
