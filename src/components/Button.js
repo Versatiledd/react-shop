@@ -22,9 +22,12 @@ const SingleButton = styled.button`
   outline: none;
   border: 1px solid gray;
   overflow: hidden;
-  transition: 1s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   z-index: 0;
-
+  &:hover {
+    color: white;
+    border: none;
+  }
   &::before {
     position: absolute;
     content: "";
