@@ -16,6 +16,7 @@
 }
 
 .single-product {
+  text-align: center;
   height: 30vh;
   width: 100%;
   margin: 0 20px;
@@ -37,6 +38,7 @@
   height: 100%;
 }
 
+
 @media (min-width: 320px) and (orientation: portrait) {
   .container-featured {
     flex-direction: column;
@@ -44,7 +46,7 @@
 
   .single-product {
     height: 300px;
-    margin: 0;
+    margin: 25px 0;
     padding: 15px 0;
   }
 }
@@ -58,7 +60,6 @@
   .single-product {
     width: 45%;
     padding: 15px 0;
-    margin: 0 6px;
   }
 }
 
@@ -71,6 +72,7 @@
   .featured-title {
     font-size: 35px;
   }
+
   .single-product {
     height: 350px;
   }
@@ -82,12 +84,14 @@
   .featured-products {
     height: 100%;
   }
+
   .container-featured {
     flex-wrap: wrap;
   }
+
   .single-product {
     height: 100%;
-    margin: 20px 10px;
+    margin: 40px 10px;
     width: 45%;
   }
 }
@@ -97,15 +101,17 @@
     height: 80vh;
   }
 }
+
 @media (min-width: 812px) and (orientation: landscape) {
   .single-product {
     height: 320px;
     width: 40%;
-    padding: 15px 0;
   }
+
   .featured-products {
     height: 100%;
   }
+
   .container-featured {
     flex-wrap: wrap;
   }
