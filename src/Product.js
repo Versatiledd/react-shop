@@ -5,7 +5,6 @@ import { ProductConsumer } from "./context/context";
 import "../src/styles/featured-products.css";
 
 export default function Product({ product }) {
-  console.log(product.image);
   return (
     <ProductConsumer>
       {value => {
