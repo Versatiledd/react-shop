@@ -8,7 +8,7 @@ export const items = [
       description:
         "Kurs przeznaczony dla osób, które pragną wyruszyć w długą i ciężką podróż związaną z programowaniem. Prowadzący w sposób przemyślany omawia podstawowe zagadnienia dotyczące semantyki, sposobu zagnieżdzania elementów oraz wiele więcej.",
       featured: true,
-      image: { fields: { file: { url: "img/html.jpg" } } }
+      image: { fields: { file: { url: "img/html.webp" } } }
     }
   },
   {
@@ -22,7 +22,7 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: false,
 
-      image: { fields: { file: { url: "images/html.jpg" } } }
+      image: { fields: { file: { url: "images/html.webp" } } }
     }
   },
   {
@@ -93,7 +93,7 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: true,
 
-      image: { fields: { file: { url: "img/css.jpg" } } }
+      image: { fields: { file: { url: "img/css.webp" } } }
     }
   },
   {
@@ -121,7 +121,7 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: true,
 
-      image: { fields: { file: { url: "img/css.jpg" } } }
+      image: { fields: { file: { url: "img/css.webp" } } }
     }
   },
   {

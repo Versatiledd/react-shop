@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
-import AI from "../images/AI.jpg";
+import AI from "../images/AIn.webp";
 import Deploy from "../images/deploy.jpg";
 import DataScience from "../images/datascience.jpg";
 import Security from "../images/security.jpg";
