@@ -18,7 +18,10 @@ export default function Product({ product }) {
                   <img className="img-single" src={product.image} alt="" />
                 </div>
               </div>
-              <Link to={`/product/${product.id}`}>
+              <Link
+                to={`/product/${product.id}`}
+                onClick={() => setSingleProduct(product.id)}
+              >
                 <Button></Button>
               </Link>
             </div>

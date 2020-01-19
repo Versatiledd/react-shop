@@ -22,7 +22,7 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: false,
 
-      image: { fields: { file: { url: "images/html.webp" } } }
+      image: { fields: { file: { url: "img/react.png" } } }
     }
   },
   {
@@ -36,7 +36,7 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: false,
 
-      image: { fields: { file: { url: "img/product-2.png" } } }
+      image: { fields: { file: { url: "img/node.jpg" } } }
     }
   },
   {
@@ -50,7 +50,7 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: false,
 
-      image: { fields: { file: { url: "img/product-3.png" } } }
+      image: { fields: { file: { url: "img/html.webp" } } }
     }
   },
   {
@@ -64,26 +64,11 @@ export const items = [
         "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
       featured: false,
 
-      image: { fields: { file: { url: "img/product-4.png" } } }
+      image: { fields: { file: { url: "img/graphql.jpeg" } } }
     }
   },
   {
     sys: { id: 5 },
-
-    fields: {
-      title: "samsung galaxy A8 - black",
-      price: 55,
-      company: "samsung",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-
-      image: { fields: { file: { url: "img/product-5.png" } } }
-    }
-  },
-
-  {
-    sys: { id: 6 },
 
     fields: {
       title: "fuji X100s photo camera",
@@ -97,21 +82,7 @@ export const items = [
     }
   },
   {
-    sys: { id: 7 },
-
-    fields: {
-      title: "canon Eos 30 photo camera",
-      price: 120,
-      company: "canon",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-
-      image: { fields: { file: { url: "img/product-7.png" } } }
-    }
-  },
-  {
-    sys: { id: 8 },
+    sys: { id: 6 },
 
     fields: {
       title: "nikon D 3100 photo camera",
@@ -125,7 +96,7 @@ export const items = [
     }
   },
   {
-    sys: { id: 9 },
+    sys: { id: 7 },
 
     fields: {
       title: "acer desktop computer",
@@ -136,46 +107,6 @@ export const items = [
       featured: true,
 
       image: { fields: { file: { url: "img/js.png" } } }
-    }
-  },
-  {
-    sys: { id: 10 },
-
-    fields: {
-      title: "hp desktop computer",
-      price: 75,
-      company: "hp",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-
-      image: { fields: { file: { url: "img/product-10.png" } } }
-    }
-  },
-  {
-    sys: { id: 11 },
-
-    fields: {
-      title: "lenovo desktop computer",
-      price: 110,
-      company: "lenovo",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-      image: { fields: { file: { url: "img/product-11.png" } } }
-    }
-  },
-  {
-    sys: { id: 12 },
-
-    fields: {
-      title: "dell desktop computer",
-      price: 28,
-      company: "dell",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-      image: { fields: { file: { url: "img/product-12.png" } } }
     }
   }
 ];

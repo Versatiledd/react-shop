@@ -1,9 +1,10 @@
 import React from "react";
 import { ProductConsumer } from "../context/context";
+import AllProducts from "../product-components/AllProducts";
 import "../styles/shop.css";
 
 function Shop() {
-  return <ProductConsumer>{value => console.log(value)}</ProductConsumer>;
+  return <AllProducts></AllProducts>;
 }
 
 export default Shop;

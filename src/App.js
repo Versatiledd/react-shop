@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Solutions from "./pages/Solutions";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
+import SingleProductPage from "./pages/SingleProduct";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/solutions" component={Solutions} />
                 <Route exact path="/shop" component={Shop} />
+                <Route
+                  exact
+                  path="/product/:id"
+                  component={SingleProductPage}
+                />
                 <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
