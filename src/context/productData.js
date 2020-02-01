@@ -15,13 +15,11 @@ export const items = [
     sys: { id: 1 },
 
     fields: {
-      title: "samsung s7 - white",
-      price: 20,
-      company: "samsung",
+      title: "Advanced Node - trudna droga do zostania ekspertem",
+      price: 450,
       description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
+        "Node.js – wieloplatformowe środowisko uruchomieniowe o otwartym kodzie do tworzenia aplikacji typu server-side napisanych w języku JavaScript. Przyczynił się do stworzenia paradygmatu „JavaScript everywhere”[3] umożliwiając programistom tworzenie aplikacji w obrębie jednego języka programowania zamiast polegania na odrębnych po stronie serwerowej.",
       featured: false,
-
       image: { fields: { file: { url: "img/react.png" } } }
     }
   },
@@ -29,13 +27,11 @@ export const items = [
     sys: { id: 2 },
 
     fields: {
-      title: "htc 10 - black",
-      price: 30,
-      company: "htc",
+      title: "Advanced Node - trudna droga do zostania ekspertem",
+      price: 450,
       description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
+        "Node.js – wieloplatformowe środowisko uruchomieniowe o otwartym kodzie do tworzenia aplikacji typu server-side napisanych w języku JavaScript. Przyczynił się do stworzenia paradygmatu „JavaScript everywhere”[3] umożliwiając programistom tworzenie aplikacji w obrębie jednego języka programowania zamiast polegania na odrębnych po stronie serwerowej.",
       featured: false,
-
       image: { fields: { file: { url: "img/node.jpg" } } }
     }
   },
@@ -71,13 +67,11 @@ export const items = [
     sys: { id: 5 },
 
     fields: {
-      title: "fuji X100s photo camera",
-      price: 90,
-      company: "fuji",
+      title: "Kurs CSS - zacznij budować piękne strony internetowe",
+      price: 150,
       description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
+        "Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący do opisu formy prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r.",
       featured: true,
-
       image: { fields: { file: { url: "img/css.webp" } } }
     }
   },
