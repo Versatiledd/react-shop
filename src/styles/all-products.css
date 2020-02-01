@@ -1,4 +1,11 @@
 .all-products {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .single-product {
+        padding: 15px 15px;
+    }
 }
