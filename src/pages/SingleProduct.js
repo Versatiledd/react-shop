@@ -1,5 +1,6 @@
 import React from "react";
 import { ProductConsumer } from "../context/context";
+import { Link } from "react-router-dom";
 import "../styles/single-product-page.css";
 export default function SingleProduct() {
   return (
@@ -26,9 +27,11 @@ export default function SingleProduct() {
                 <h4 className="single-product-price"> Cena : {price} zł </h4>
               </div>
               <div className="btn-single">
-                <button onClick={() => addToCart(id)} className="btn-s">
-                  Dodaj do koszyka
-                </button>
+                <Link to="/cart">
+                  <button onClick={() => addToCart(id)} className="btn-s">
+                    Dodaj do koszyka
+                  </button>
+                </Link>
               </div>
             </div>
           </section>

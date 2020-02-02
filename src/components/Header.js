@@ -71,7 +71,7 @@ const Header = ({ history }) => {
                           className="shop-icon"
                           onClick={handleCart}
                         ></TiShoppingCart>
-                        <div className="addToShop">1</div>
+                        <div className="addToShop">{value.cartItems}</div>
                       </div>
                     </div>
                   </div>
