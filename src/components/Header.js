@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { TiShoppingCart } from "react-icons/ti";
+import { ProductConsumer } from "../context/context";
 import Menu from "./Menu";
+import SideCart from "../components/SideCart";
 import "../styles/shop-icon.css";
 
 const Header = ({ history }) => {
@@ -48,27 +50,40 @@ const Header = ({ history }) => {
     }, 800);
   };
   return (
-    <header>
-      <div className="container">
-        <div className="wrapper">
-          <div className="wrapper-logo">
-            <div className="logo">
-              <Link to="/">Creative Code</Link>
-            </div>
-            <div className="menu">
-              <button disabled={disabled} onClick={handleMenu}>
-                Menu
-              </button>
-              <div className="container-icon">
-                <TiShoppingCart className="shop-icon"></TiShoppingCart>
-                <div className="addToShop">1</div>
+    <ProductConsumer>
+      {value => {
+        const { handleCart } = value;
+        return (
+          <>
+            <header>
+              <div className="container">
+                <div className="wrapper">
+                  <div className="wrapper-logo">
+                    <div className="logo">
+                      <Link to="/">Creative Code</Link>
+                    </div>
+                    <div className="menu">
+                      <button disabled={disabled} onClick={handleMenu}>
+                        Menu
+                      </button>
+                      <div className="container-icon">
+                        <TiShoppingCart
+                          className="shop-icon"
+                          onClick={handleCart}
+                        ></TiShoppingCart>
+                        <div className="addToShop">1</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Menu state={state} />
-    </header>
+              <Menu state={state} />
+              <SideCart value={value} />
+            </header>
+          </>
+        );
+      }}
+    </ProductConsumer>
   );
 };
 

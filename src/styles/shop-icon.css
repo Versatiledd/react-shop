@@ -15,3 +15,12 @@
 .shop-icon {
     font-size: 18px;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 0;
+    height: 0;
+}

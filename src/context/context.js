@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { items } from "../context/productData";
+
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
@@ -17,10 +18,14 @@ class ProductProvider extends Component {
     loading: true
   };
   handleCart = () => {
-    this.setState({
-      cartOpen: !this.state.cartOpen
-    });
+    this.setState(
+      {
+        cartOpen: !this.state.cartOpen
+      },
+      () => console.log(this.state.cartOpen)
+    );
   };
+
   closeCart = () => {
     this.setState({
       cartOpen: false
