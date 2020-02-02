@@ -17,10 +17,11 @@
 }
 
 .overlay {
+    overflow: hidden;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: black;
+    background-color: rgb(175, 133, 56);
     width: 0;
     height: 0;
 }
