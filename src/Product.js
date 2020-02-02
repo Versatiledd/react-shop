@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Button from "../src/components/Button";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "./context/context";

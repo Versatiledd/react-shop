@@ -64,7 +64,12 @@ header .container,
   color: rgb(29, 22, 22);
 }
 
+.menu {
+  display: flex;
+}
+
 .menu button {
+  padding: 0 10px;
   background: none;
   border: none;
   outline: none;
@@ -224,6 +229,7 @@ header .container,
   .wrapper {
     padding: 0 25px;
   }
+
   .home h4 {
     font-size: 18px;
     margin-top: 30px;
@@ -264,6 +270,7 @@ header .container,
   .menu-links .location {
     display: none;
   }
+
   .location span {
     margin: 0;
   }
@@ -271,94 +278,117 @@ header .container,
   .location span:first-child {
     margin-left: 0;
   }
+
   .menu-links .location {
     font-size: 19px;
   }
 }
+
 @media (min-width: 360px) and (orientation: portrait) {
   .menu-links .location {
     display: flex;
   }
+
   .location span {
     align-self: center;
     margin: 0 5px;
   }
 }
+
 @media (min-width: 374px) and (orientation: portrait) {
   .menu-links .message {
     padding: 25px 0 !important;
   }
 }
+
 @media (min-width: 411px) and (orientation: portrait) {
   .wrapper .menu-links {
     height: 60vh;
   }
+
   .menu-links .location {
     bottom: -40%;
   }
+
   .message p {
     line-height: 32px;
   }
 }
+
 @media (min-width: 768px) and (orientation: portrait) {
   .menu button {
     font-size: 25px;
   }
+
   .logo a {
     font-size: 24px;
   }
+
   .wrapper .menu-links {
     height: 80vh;
   }
+
   .menu-links nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   .message p {
     font-size: 23px;
   }
+
   .message h4 {
     font-size: 28px;
     letter-spacing: 1px;
   }
+
   .menu-links .location {
     bottom: 0;
     width: 100%;
     justify-content: space-around;
   }
+
   .menu-links .location {
     font-size: 25px;
     bottom: 0;
   }
 }
+
 @media (min-width: 1024px) and (orientation: portrait) {
   .menu button {
     font-size: 32px;
   }
+
   .logo a {
     font-size: 32px;
   }
+
   .wrapper .menu-links {
     height: 85vh;
   }
+
   .message p {
     font-size: 35px;
     line-height: 70px;
   }
+
   .message h4 {
     font-size: 38px;
     letter-spacing: 1px;
   }
+
   .menu-links .location {
     bottom: 0;
     width: 100%;
     justify-content: space-around;
   }
+
   .menu-links .location {
     font-size: 35px;
     bottom: 0;
   }
+
   .menu-links ul li {
     font-size: 60px;
   }
@@ -368,27 +398,33 @@ header .container,
   .wrapper {
     padding: 0 20px;
   }
+
   .wrapper .menu-links {
     top: 70px;
   }
+
   .home h4 {
     line-height: 48px;
     font-size: 14px;
     padding: 0;
     margin: 0;
   }
+
   .menu-links ul li {
     width: 240px;
     height: 40px;
     font-size: 30px;
     padding: 30px 0;
   }
+
   .message h4 {
     font-size: 23px;
   }
+
   .message p {
     font-size: 16px;
   }
+
   .menu-links .location {
     font-size: 18px;
     display: flex;
@@ -402,29 +438,36 @@ header .container,
   .wrapper {
     padding: 0 20px;
   }
+
   .wrapper .menu-links {
     top: 70px;
   }
+
   .menu-links ul li {
     width: 240px;
     height: 40px;
     font-size: 30px;
     padding: 30px 0;
   }
+
   .message h4 {
     font-size: 23px;
   }
+
   .message p {
     font-size: 16px;
   }
+
   .menu-links .location {
     bottom: -80px;
   }
 }
+
 @media (min-width: 731px) and (orientation: landscape) {
   .wrapper .menu-links {
     top: 100px;
   }
+
   .menu-links .location {
     bottom: -100px;
   }
@@ -441,30 +484,38 @@ header .container,
     max-width: 1300px;
     margin: 0 auto;
   }
+
   .wrapper .menu-links {
     height: 65%;
   }
+
   .menu-links nav {
     height: 100%;
   }
+
   .menu-links nav ul {
     position: relative;
     top: 80px;
     padding: 0 100px;
   }
+
   .menu-links nav ul li {
     font-size: 50px;
     padding: 50px 0;
   }
+
   .message h4 {
     font-size: 30px;
   }
+
   .message p {
     font-size: 20px;
   }
+
   .menu-links .location {
     font-size: 24px;
   }
+
   .home h4 {
     padding: 50px 100px;
     font-size: 17px;
@@ -476,9 +527,11 @@ header .container,
     max-width: 1300px;
     margin: 0 auto;
   }
+
   .menu-links nav ul {
     top: 180px;
   }
+
   .home h4 {
     padding: 100px 100px;
     font-size: 20px;

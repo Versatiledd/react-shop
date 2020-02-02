@@ -5,6 +5,7 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
   state = {
     cart: 0,
+    cartOpen: false,
     cartItems: 0,
     cartSubTotal: 0,
     cartTax: 0,
@@ -15,11 +16,25 @@ class ProductProvider extends Component {
     singleProduct: {},
     loading: true
   };
-
-  componentDidMount() {
+  handleCart = () => {
+    this.setState({
+      cartOpen: !this.state.cartOpen
+    });
+  };
+  closeCart = () => {
+    this.setState({
+      cartOpen: false
+    });
+  };
+  openCart = () => {
+    this.setState({
+      cartOpen: true
+    });
+  };
+  componentDidMount = () => {
     this.setProducts(items);
-  }
-  setProducts(products) {
+  };
+  setProducts = products => {
     let storeProducts = products.map(item => {
       const { id } = item.sys;
       const image = item.fields.image.fields.file.url;
@@ -36,7 +51,7 @@ class ProductProvider extends Component {
       singleProduct: this.getStorageProduct(),
       loading: false
     });
-  }
+  };
 
   getStorageCart = () => {
     return [];
@@ -55,7 +70,33 @@ class ProductProvider extends Component {
   syncStorage = () => {};
   // add to cart
   addToCart = id => {
-    console.log(id);
+    let temporaryCart = [...this.state.cart];
+    console.log(temporaryCart);
+    let allProducts = [...this.state.storeProducts];
+    console.log(allProducts);
+    let item = temporaryCart.find(item => item.id === id);
+    console.log(item);
+    if (!item) {
+      item = allProducts.find(item => item.id === item.id);
+      let total = item.price;
+      let cartItem = { ...item, count: 1, total };
+      temporaryCart = [...temporaryCart, cartItem];
+      console.log(temporaryCart);
+    } else {
+      item.count++;
+      item.total = item.price * item.count;
+      item.total = parseFloat(item.total.toFixed(2));
+    }
+    this.setState(
+      () => {
+        return { cart: temporaryCart };
+      },
+      () => {
+        this.addTotals();
+        this.syncStorage();
+        this.openCart();
+      }
+    );
   };
   // set single product
   setSingleProduct = id => {
@@ -71,6 +112,9 @@ class ProductProvider extends Component {
     return (
       <ProductContext.Provider
         value={{
+          handleCart: this.handleCart,
+          closeCart: this.closeCart,
+          openCart: this.openCart,
           ...this.state,
           addToCart: this.addToCart,
           setSingleProduct: this.setSingleProduct

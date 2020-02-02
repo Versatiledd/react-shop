@@ -1,0 +1,17 @@
+.container-icon {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.addToShop {
+    position: absolute;
+    color: red;
+    padding: 5px;
+    top: -8px;
+    right: -15px;
+}
+
+.shop-icon {
+    font-size: 18px;
+}

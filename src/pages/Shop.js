@@ -1,5 +1,4 @@
 import React from "react";
-import { ProductConsumer } from "../context/context";
 import AllProducts from "../product-components/AllProducts";
 import "../styles/shop.css";
 

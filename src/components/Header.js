@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
+import { TiShoppingCart } from "react-icons/ti";
 import Menu from "./Menu";
+import "../styles/shop-icon.css";
 
 const Header = ({ history }) => {
   const [state, setState] = useState({
@@ -57,6 +59,10 @@ const Header = ({ history }) => {
               <button disabled={disabled} onClick={handleMenu}>
                 Menu
               </button>
+              <div className="container-icon">
+                <TiShoppingCart className="shop-icon"></TiShoppingCart>
+                <div className="addToShop">1</div>
+              </div>
             </div>
           </div>
         </div>
