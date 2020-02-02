@@ -19,6 +19,7 @@
 .overlay {
     overflow: hidden;
     position: absolute;
+    background-color: brown;
     top: 0;
     right: 0;
     width: 0;

@@ -5,7 +5,6 @@ import { ProductConsumer } from "../context/context";
 import Menu from "./Menu";
 import SideCart from "../components/SideCart";
 import "../styles/shop-icon.css";
-
 const Header = ({ history }) => {
   const [state, setState] = useState({
     initial: false,
@@ -50,40 +49,42 @@ const Header = ({ history }) => {
     }, 800);
   };
   return (
-    <ProductConsumer>
-      {value => {
-        const { handleCart } = value;
-        return (
-          <>
-            <header>
-              <div className="container">
-                <div className="wrapper">
-                  <div className="wrapper-logo">
-                    <div className="logo">
-                      <Link to="/">Creative Code</Link>
-                    </div>
-                    <div className="menu">
-                      <button disabled={disabled} onClick={handleMenu}>
-                        Menu
-                      </button>
-                      <div className="container-icon">
-                        <TiShoppingCart
-                          className="shop-icon"
-                          onClick={handleCart}
-                        ></TiShoppingCart>
-                        <div className="addToShop">{value.cartItems}</div>
+    <>
+      <ProductConsumer>
+        {value => {
+          const { handleCart, cartItems } = value;
+          return (
+            <>
+              <header>
+                <div className="container">
+                  <div className="wrapper">
+                    <div className="wrapper-logo">
+                      <div className="logo">
+                        <Link to="/">Creative Code</Link>
+                      </div>
+                      <div className="menu">
+                        <button disabled={disabled} onClick={handleMenu}>
+                          Menu
+                        </button>
+                        <div className="container-icon">
+                          <TiShoppingCart
+                            className="shop-icon"
+                            onClick={handleCart}
+                          ></TiShoppingCart>
+                          <div className="addToShop">{cartItems}</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <Menu state={state} />
-              <SideCart value={value} />
-            </header>
-          </>
-        );
-      }}
-    </ProductConsumer>
+                <Menu state={state} />
+                <SideCart value={value}></SideCart>
+              </header>
+            </>
+          );
+        }}
+      </ProductConsumer>
+    </>
   );
 };
 
