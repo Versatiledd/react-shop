@@ -52,7 +52,7 @@ const Header = ({ history }) => {
     <>
       <ProductConsumer>
         {value => {
-          const { handleCart, cartItems, cart } = value;
+          const { handleCart, cartItems } = value;
           return (
             <>
               <header>

@@ -8,8 +8,8 @@ export default function Cart() {
   return (
     <section className="container-cart">
       <CartDescription />
-      <CartTotals />
       <CartList />
+      <CartTotals />
     </section>
   );
 }

@@ -6,6 +6,7 @@ export default function CartList() {
     <ProductConsumer>
       {value => {
         const { cart, increment, decrement, removeItem } = value;
+        console.log(cart);
         if (cart.length === 0) {
           return <h3 className="title-cart">Twoja karta jest pusta.</h3>;
         }
