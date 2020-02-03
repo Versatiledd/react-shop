@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Solutions from "./pages/Solutions";
 import Shop from "./pages/Shop";
+import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import SingleProductPage from "./pages/SingleProduct";
 
@@ -25,6 +26,7 @@ function App() {
                   path="/product/:id"
                   component={SingleProductPage}
                 />
+                <Route exact path="/cart" component={Cart} />
                 <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>

@@ -6,6 +6,7 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
   state = {
     cart: 0,
+    cartAdded: 0,
     cartOpen: false,
     cartItems: 0,
     cartSubTotal: 0,
@@ -21,6 +22,21 @@ class ProductProvider extends Component {
     this.setState({
       cartOpen: !this.state.cartOpen
     });
+  };
+
+  // strona zamówień
+
+  increment = id => {
+    console.log(id);
+  };
+  decrement = id => {
+    console.log(id);
+  };
+  removeItem = id => {
+    console.log(id);
+  };
+  clearCart = id => {
+    console.log("oczyszczenie");
   };
 
   componentDidMount = () => {
@@ -103,7 +119,7 @@ class ProductProvider extends Component {
     let allProducts = [...this.state.storeProducts];
     let item = temporaryCart.find(item => item.id === id);
     if (!item) {
-      item = allProducts.find(item => item.id === item.id);
+      item = allProducts.find(item => item.id === id);
       let total = item.price;
       let cartItem = { ...item, count: 1, total };
       temporaryCart = [...temporaryCart, cartItem];
@@ -140,7 +156,11 @@ class ProductProvider extends Component {
           openCart: this.openCart,
           ...this.state,
           addToCart: this.addToCart,
-          setSingleProduct: this.setSingleProduct
+          setSingleProduct: this.setSingleProduct,
+          increment: this.increment,
+          decrement: this.decrement,
+          removeItem: this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}
