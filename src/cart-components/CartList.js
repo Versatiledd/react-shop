@@ -6,7 +6,6 @@ export default function CartList() {
     <ProductConsumer>
       {value => {
         const { cart, increment, decrement, removeItem } = value;
-        console.log(cart);
         if (cart.length === 0) {
           return <h3 className="title-cart">Twoja karta jest pusta.</h3>;
         }
@@ -15,6 +14,7 @@ export default function CartList() {
             {cart.map(item => (
               <CartItem
                 key={item.id}
+                cart={item}
                 increment={increment}
                 decrement={decrement}
                 removeItem={removeItem}

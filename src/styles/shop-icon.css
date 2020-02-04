@@ -16,6 +16,10 @@
     font-size: 18px;
 }
 
+.link-sidecart {
+    text-decoration: none;
+}
+
 .overlay-title {
     font-size: 20px;
     margin: 20px 0;
@@ -25,7 +29,7 @@
 .overlay {
     height: 100%;
     width: 0;
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
     background-color: #fbf0d7;
     right: 0;
@@ -48,7 +52,7 @@
 
 .shop-button {
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto;
     justify-content: center;
     cursor: pointer;
     height: 40px;

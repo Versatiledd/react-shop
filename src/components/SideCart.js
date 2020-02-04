@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "../styles/shop-icon.css";
+import { Link } from "react-router-dom";
 
 export default function SideCart({ value }) {
   let var1 = useRef(null);
@@ -35,7 +36,9 @@ export default function SideCart({ value }) {
           <span className="shop-price"> Cena : {item.price} zł</span>
         </div>
       ))}
-      <button className="shop-button">Przejdź do karty</button>
+      <Link to="/cart" className="link-sidecart">
+        <button className="shop-button">Przejdź do karty</button>
+      </Link>
     </div>
   );
 }

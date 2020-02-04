@@ -15,7 +15,7 @@ export const items = [
     sys: { id: 1 },
 
     fields: {
-      title: "Advanced Node - trudna droga do zostania ekspertem",
+      title: "Advanced Node - be ekspert",
       price: 450,
       description:
         "Node.js – wieloplatformowe środowisko uruchomieniowe o otwartym kodzie do tworzenia aplikacji typu server-side napisanych w języku JavaScript. Przyczynił się do stworzenia paradygmatu „JavaScript everywhere”[3] umożliwiając programistom tworzenie aplikacji w obrębie jednego języka programowania zamiast polegania na odrębnych po stronie serwerowej.",
@@ -27,7 +27,7 @@ export const items = [
     sys: { id: 2 },
 
     fields: {
-      title: "Advanced Node - trudna droga do zostania ekspertem",
+      title: "React",
       price: 450,
       description:
         "Node.js – wieloplatformowe środowisko uruchomieniowe o otwartym kodzie do tworzenia aplikacji typu server-side napisanych w języku JavaScript. Przyczynił się do stworzenia paradygmatu „JavaScript everywhere”[3] umożliwiając programistom tworzenie aplikacji w obrębie jednego języka programowania zamiast polegania na odrębnych po stronie serwerowej.",
