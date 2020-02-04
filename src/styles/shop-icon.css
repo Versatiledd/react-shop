@@ -24,13 +24,12 @@
 
 .overlay {
     height: 100%;
-    width: 100%;
+    width: 0;
     overflow: hidden;
-    overflow-y: scroll;
     position: absolute;
     background-color: #fbf0d7;
     right: 0;
-    top: 0
+    top: 0;
 }
 
 .shopCart {
@@ -43,6 +42,23 @@
 }
 
 .shop-title {
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 14px;
+}
+
+.shop-button {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    outline: none;
+    border: none;
+    background-color: rgb(163, 94, 30);
+    transition: 0.3s all linear;
+}
+
+.shop-button:hover {
+    color: white;
 }

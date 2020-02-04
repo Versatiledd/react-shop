@@ -8,16 +8,19 @@ export default function SideCart({ value }) {
     if (value.cartOpen === true) {
       gsap.to(var1, {
         opacity: 1,
-        duration: 0.18,
         width: 300,
-        ease: "Power1.easeOut"
+        duration: 0.18,
+        ease: "Power1.easeOut",
+        borderLeft: "2px solid rgb(192, 162, 88)",
+        borderBottom: "2px solid rgb(192, 162, 88)"
       });
     } else if (value.cartOpen === false) {
       gsap.to(var1, {
         duration: 0.18,
         right: 0,
-        width: 0,
-        opacity: 0
+        opacity: 0,
+        ease: "Power1.easeOut",
+        width: 0
       });
     }
   });
@@ -32,7 +35,7 @@ export default function SideCart({ value }) {
           <span className="shop-price"> Cena : {item.price} zł</span>
         </div>
       ))}
-      <button>Przejdź do karty</button>
+      <button className="shop-button">Przejdź do karty</button>
     </div>
   );
 }
