@@ -38,6 +38,12 @@
 
 .shopCart {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-price {
+    padding: 10px 0;
 }
 
 .shopImage {

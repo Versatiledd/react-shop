@@ -33,7 +33,10 @@ export default function SideCart({ value }) {
         <div key={item.id} className="shopCart">
           <img src={item.image} alt="" className="shopImage" />
           <h3 className="shop-title">{item.title}</h3>
-          <span className="shop-price"> Cena : {item.price} zł</span>
+          <span> Ilość : {item.count} </span>
+          <span className="shop-price">
+            Cena : {item.price * item.count} zł
+          </span>
         </div>
       ))}
       <Link to="/cart" className="link-sidecart">

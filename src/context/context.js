@@ -27,13 +27,36 @@ class ProductProvider extends Component {
   // strona zamówień
 
   increment = id => {
-    console.log(id);
+    let tempCart = [...this.state.cart];
+    const findItem = tempCart.find(item => item.id === id);
+    findItem.count++;
+    findItem.total = findItem.count * findItem.price;
+    findItem.total = parseFloat(findItem.total.toFixed(2));
+    this.setState(
+      () => {
+        return {
+          cart: [...tempCart]
+        };
+      },
+      () => {
+        this.addTotals();
+        this.syncStorage();
+      }
+    );
   };
-  decrement = id => {
-    console.log(id);
-  };
+  decrement = id => {};
   removeItem = id => {
-    console.log(id);
+    let tempCart = [...this.state.cart];
+    tempCart = tempCart.filter(item => item.id !== id);
+    this.setState(
+      {
+        cart: [...tempCart]
+      },
+      () => {
+        this.addTotals();
+        this.syncStorage();
+      }
+    );
   };
   clearCart = id => {
     console.log("oczyszczenie");
