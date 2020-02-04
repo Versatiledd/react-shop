@@ -23,7 +23,11 @@ class ProductProvider extends Component {
       cartOpen: !this.state.cartOpen
     });
   };
-
+  closeCart = () => {
+    this.setState({
+      cartOpen: false
+    });
+  };
   // strona zamówień
 
   increment = id => {

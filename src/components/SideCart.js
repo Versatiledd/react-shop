@@ -4,6 +4,7 @@ import "../styles/shop-icon.css";
 import { Link } from "react-router-dom";
 
 export default function SideCart({ value }) {
+  const { closeCart } = value;
   let var1 = useRef(null);
   useEffect(() => {
     if (value.cartOpen === true) {
@@ -14,7 +15,7 @@ export default function SideCart({ value }) {
         ease: "Power1.easeOut",
         borderLeft: "2px solid rgb(192, 162, 88)",
         borderBottom: "2px solid rgb(192, 162, 88)",
-        zIndex: 10
+        zIndex: 11
       });
     } else if (value.cartOpen === false) {
       gsap.to(var1, {
@@ -40,7 +41,7 @@ export default function SideCart({ value }) {
           </span>
         </div>
       ))}
-      <Link to="/cart" className="link-sidecart">
+      <Link to="/cart" onClick={closeCart} className="link-sidecart">
         <button className="shop-button">Przejdź do karty</button>
       </Link>
     </div>
