@@ -1,0 +1,44 @@
+.background-container {
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.second-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50vw;
+}
+
+.shape-second {
+    height: 100%;
+}
+
+.people-image-container {
+    position: absolute;
+    right: 15px;
+    top: 85px;
+}
+
+.description-background {
+    position: absolute;
+    padding: 0px 30px;
+    width: 50%;
+    top: 30%;
+}
+
+.descrtiption-title {
+    margin: 30px 0;
+    font-size: 33 px;
+    color: white;
+}
+
+p.descrtiption-long {
+    font-family: 'Roboto-Condensed';
+    font-size: 18px;
+    text-transform: inherit;
+    line-height: 190%;
+    width: 90%;
+}

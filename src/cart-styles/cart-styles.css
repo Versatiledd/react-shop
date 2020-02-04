@@ -132,9 +132,7 @@ img.image-cart {
 /* landscape */
 
 @media(min-width: 568px) and (orientation: landscape) {
-
     .title-product {
         margin-left: 10px;
     }
-
 }
