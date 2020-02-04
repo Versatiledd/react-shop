@@ -44,7 +44,29 @@ class ProductProvider extends Component {
       }
     );
   };
-  decrement = id => {};
+  decrement = id => {
+    let tempCart = [...this.state.cart];
+    const findItem = tempCart.find(item => item.id === id);
+    findItem.count = findItem.count - 1;
+    if (findItem.count === 0) {
+      this.removeItem(id);
+    } else {
+      findItem.total = findItem.count * findItem.price;
+      findItem.total = parseFloat(findItem.total.toFixed(2));
+
+      this.setState(
+        () => {
+          return {
+            cart: [...tempCart]
+          };
+        },
+        () => {
+          this.addTotals();
+          this.syncStorage();
+        }
+      );
+    }
+  };
   removeItem = id => {
     let tempCart = [...this.state.cart];
     tempCart = tempCart.filter(item => item.id !== id);
@@ -58,8 +80,16 @@ class ProductProvider extends Component {
       }
     );
   };
-  clearCart = id => {
-    console.log("oczyszczenie");
+  clearCart = () => {
+    this.setState(
+      {
+        cart: []
+      },
+      () => {
+        this.addTotals();
+        this.syncStorage();
+      }
+    );
   };
 
   componentDidMount = () => {

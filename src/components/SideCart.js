@@ -13,7 +13,8 @@ export default function SideCart({ value }) {
         duration: 0.18,
         ease: "Power1.easeOut",
         borderLeft: "2px solid rgb(192, 162, 88)",
-        borderBottom: "2px solid rgb(192, 162, 88)"
+        borderBottom: "2px solid rgb(192, 162, 88)",
+        zIndex: 10
       });
     } else if (value.cartOpen === false) {
       gsap.to(var1, {
