@@ -16,12 +16,33 @@
     font-size: 18px;
 }
 
+.overlay-title {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
 .overlay {
+    height: 100%;
+    width: 100%;
     overflow: hidden;
+    overflow-y: scroll;
     position: absolute;
-    border-left: 2px solid gray;
-    border-bottom: 2px solid gray;
-    background-color: white;
+    background-color: #fbf0d7;
     right: 0;
     top: 0
+}
+
+.shopCart {
+    padding: 20px;
+}
+
+.shopImage {
+    width: 120px;
+    height: 80px;
+}
+
+.shop-title {
+    padding: 10px 0;
+    font-size: 14px;
 }
