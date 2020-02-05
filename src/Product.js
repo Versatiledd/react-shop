@@ -8,7 +8,7 @@ export default function Product({ product }) {
   return (
     <ProductConsumer>
       {value => {
-        const { addToCart, setSingleProduct } = value;
+        const { setSingleProduct } = value;
         return (
           <>
             <div className="single-product">

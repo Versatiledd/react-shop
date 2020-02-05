@@ -3,6 +3,10 @@ section.container-single-product {
     width: 100%;
 }
 
+.single-product-page {
+    margin: 30px 0;
+}
+
 .single-image,
 img {
     height: 100%;
@@ -12,8 +16,6 @@ img {
 .image-single-product {
     padding: 30px 0;
 }
-
-
 
 .btn-single {
     display: flex;

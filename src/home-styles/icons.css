@@ -1,0 +1,72 @@
+section.container-icons {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.wrapper-image {
+    width: 200px;
+    height: 100%;
+    margin: 20px auto;
+}
+
+h3.icon-title {
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+p.icon-description {
+    font-family: "Roboto-Condensed";
+    font-size: 15px;
+    text-transform: inherit;
+    line-height: 190%;
+}
+
+.tomato {
+    color: tomato;
+}
+
+.slateblue {
+    color: slateblue;
+}
+
+.seagreen {
+    color: seagreen;
+}
+
+
+@media(min-width: 768px) and (orientation:portrait) {
+    p.icon-description {
+        font-size: 21px;
+    }
+}
+
+@media(min-width: 1024px) and (orientation:portrait) {
+    h3.icon-title {
+        font-size: 40px;
+    }
+
+    p.icon-description {
+        font-size: 31px;
+        padding: 40px 0;
+    }
+}
+
+
+@media(min-width: 1366px) and (orientation:landscape) {
+    section.container-icons {
+        flex-direction: row;
+        margin: 60px 0;
+    }
+
+    .wrapper-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    p.icon-description {
+        padding: 0 30px;
+        font-size: 18px
+    }
+}
