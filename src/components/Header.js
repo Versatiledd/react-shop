@@ -5,6 +5,8 @@ import { ProductConsumer } from "../context/context";
 import Menu from "./Menu";
 import SideCart from "../components/SideCart";
 import "../styles/shop-icon.css";
+import Background from "../home-components/Background";
+import "../home-styles/background.css";
 const Header = ({ history }) => {
   const [state, setState] = useState({
     initial: false,
@@ -55,6 +57,7 @@ const Header = ({ history }) => {
           const { handleCart, cartItems } = value;
           return (
             <>
+              <Background />
               <header>
                 <div className="container">
                   <div className="wrapper">
