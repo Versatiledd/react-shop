@@ -1,0 +1,40 @@
+.section.section-do {
+    margin: 160px 0;
+}
+
+.container-section {
+    display: flex;
+}
+
+.description {
+    width: 50%;
+}
+
+p.description_paragraph {
+    color: #2f2f2f;
+    font-family: "Work Sans";
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.title-what-we-do {
+    font-family: "Segoe UI";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: inherit;
+    padding: 60px 0;
+}
+
+.do-btn {
+    margin: 40px 0;
+    outline: none;
+    border: none;
+    width: 183px;
+    height: 59px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: #38d5e2;
+}
