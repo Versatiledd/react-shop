@@ -113,9 +113,57 @@ p.descrtiption-long {
   .background-container {
     height: 160vh;
   }
+  .second-background {
+    width: 100%;
+  }
   .people-image-container {
     width: 55%;
     right: 15px;
     top: 15%;
+  }
+  .description-background {
+    padding: 0px 15px;
+    top: 15%;
+  }
+}
+@media (min-width: 640px) and (orientation: landscape) {
+  .description-background {
+    padding: 0px 30px;
+    top: 25%;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .background-container {
+    height: 85vh;
+  }
+  .people-image-container {
+    width: 50%;
+    height: 85%;
+    right: 15px;
+    top: 5%;
+  }
+  .descrtiption-title {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1366px) and (orientation: landscape) {
+  .background-container {
+    height: 95vh;
+  }
+  .second-background {
+    width: 76%;
+  }
+  .people-image-container {
+    width: 40%;
+    right: 6%;
+    top: 5%;
+  }
+  .description-background {
+    top: 30%;
+    padding: 0 70px;
+  }
+  p.descrtiption-long {
+    font-size: 22px;
   }
 }
