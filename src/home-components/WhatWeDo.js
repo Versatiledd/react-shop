@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../home-styles/whatwedo.css";
 export default function WhatWeDo() {
   return (
@@ -12,7 +13,11 @@ export default function WhatWeDo() {
             ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             nibh euismod tincidunt.
           </p>
-          <button className="do-btn">Get a qutoe</button>
+          <button className="do-btn">
+            <Link to="/shop" className="do-btn-link">
+              Shop
+            </Link>
+          </button>
         </div>
         <div className="container-image">
           <img src="../img/whatWeDo.webp" alt="" />

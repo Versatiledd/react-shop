@@ -2,6 +2,7 @@ import React from "react";
 import Icons from "../home-components/Icons";
 import WhatWeDo from "../home-components/WhatWeDo";
 import Featured from "../home-components/Featured";
+import Footer from "../components/Footer";
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
         </div> */}
         <WhatWeDo />
         <Featured></Featured>
+        {/* <Footer /> */}
       </div>
     </>
   );
