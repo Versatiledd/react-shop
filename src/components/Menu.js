@@ -24,7 +24,7 @@ const ItSection = [
     image: Security
   }
 ];
-const Menu = ({ state }) => {
+const Menu = ({ state, showBackground, history }) => {
   let menu = useRef(null);
   let secondMenu = useRef(null);
   let menuBg = useRef(null);
@@ -140,6 +140,7 @@ const Menu = ({ state }) => {
                     onMouseOut={e => handleHoverEnd(e)}
                     to="/solutions"
                     ref={el => (number1 = el)}
+                    onClick={() => showBackground(history)}
                   >
                     Solutions
                   </Link>
@@ -159,6 +160,7 @@ const Menu = ({ state }) => {
                     onMouseEnter={e => handleHover(e)}
                     onMouseOut={e => handleHoverEnd(e)}
                     to="/contact"
+                    onClick={() => showBackground(history)}
                     ref={el => (number3 = el)}
                   >
                     Contact

@@ -16,7 +16,8 @@ class ProductProvider extends Component {
     filteredProducts: [],
     featuredProducts: [],
     singleProduct: {},
-    loading: true
+    loading: true,
+    backgroundLoad: true
   };
   handleCart = () => {
     this.setState({
@@ -27,6 +28,9 @@ class ProductProvider extends Component {
     this.setState({
       cartOpen: false
     });
+  };
+  showBackground = history => {
+    console.log(history);
   };
   // strona zamówień
 
@@ -217,7 +221,8 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
-          clearCart: this.clearCart
+          clearCart: this.clearCart,
+          showBackground: this.showBackground
         }}
       >
         {this.props.children}

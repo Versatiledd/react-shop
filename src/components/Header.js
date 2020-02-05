@@ -54,10 +54,15 @@ const Header = ({ history }) => {
     <>
       <ProductConsumer>
         {value => {
-          const { handleCart, cartItems } = value;
+          const {
+            handleCart,
+            cartItems,
+            backgroundLoad,
+            showBackground
+          } = value;
           return (
             <>
-              <Background />
+              <Background backgroundLoad={backgroundLoad} />
               <header>
                 <div className="container">
                   <div className="wrapper">
@@ -80,7 +85,11 @@ const Header = ({ history }) => {
                     </div>
                   </div>
                 </div>
-                <Menu state={state} />
+                <Menu
+                  state={state}
+                  showBackground={showBackground}
+                  history={history}
+                />
                 <SideCart value={value}></SideCart>
               </header>
             </>
