@@ -25,9 +25,8 @@ export const items = [
   },
   {
     sys: { id: 2 },
-
     fields: {
-      title: "React",
+      title: "Node",
       price: 450,
       description:
         "Node.js – wieloplatformowe środowisko uruchomieniowe o otwartym kodzie do tworzenia aplikacji typu server-side napisanych w języku JavaScript. Przyczynił się do stworzenia paradygmatu „JavaScript everywhere”[3] umożliwiając programistom tworzenie aplikacji w obrębie jednego języka programowania zamiast polegania na odrębnych po stronie serwerowej.",
@@ -39,34 +38,6 @@ export const items = [
     sys: { id: 3 },
 
     fields: {
-      title: "htc 10 - white",
-      price: 15,
-      company: "htc",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-
-      image: { fields: { file: { url: "img/html.webp" } } }
-    }
-  },
-  {
-    sys: { id: 4 },
-
-    fields: {
-      title: "samsung s7 - black",
-      price: 45,
-      company: "google",
-      description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
-      featured: false,
-
-      image: { fields: { file: { url: "img/graphql.jpeg" } } }
-    }
-  },
-  {
-    sys: { id: 5 },
-
-    fields: {
       title: "Kurs CSS - zacznij budować piękne strony internetowe",
       price: 150,
       description:
@@ -76,7 +47,7 @@ export const items = [
     }
   },
   {
-    sys: { id: 6 },
+    sys: { id: 4 },
 
     fields: {
       title: "Graph QL",
@@ -89,7 +60,7 @@ export const items = [
     }
   },
   {
-    sys: { id: 7 },
+    sys: { id: 5 },
 
     fields: {
       title: "React",
