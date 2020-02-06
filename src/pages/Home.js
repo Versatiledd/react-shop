@@ -2,6 +2,7 @@ import React from "react";
 import Icons from "../home-components/Icons";
 import WhatWeDo from "../home-components/WhatWeDo";
 import Featured from "../home-components/Featured";
+import Services from "../home-components/Services";
 import Footer from "../components/Footer";
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
           </h4>
         </div> */}
         <WhatWeDo />
+        <Services />
         <Featured></Featured>
         {/* <Footer /> */}
       </div>

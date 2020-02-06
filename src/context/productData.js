@@ -79,25 +79,23 @@ export const items = [
     sys: { id: 6 },
 
     fields: {
-      title: "nikon D 3100 photo camera",
-      price: 55,
-      company: "nikon",
+      title: "Graph QL",
+      price: 420,
       description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
+        "GraphQL pochodzi z Facebooka, który wewnętrznie szukał sposobu na zwiększenie wydajności ładowania newsfeedu w telefonach komórkowych. Korzystając z tradycyjnej struktury REST API, newsfeed wysyłał zapytania do wielu endpointów API, aby uzyskać wszystkie potrzebne dane. W tym czasie wywołania API również ładowały dodatkowe dane, których newsfeed wcale nie potrzebował. Dodatkowo po otrzymaniu całości inżynierowie front-endowi nadal musieli analizować dane, aby znaleźć poszukiwane pola.",
       featured: true,
 
-      image: { fields: { file: { url: "img/css.webp" } } }
+      image: { fields: { file: { url: "img/graphql.jpeg" } } }
     }
   },
   {
     sys: { id: 7 },
 
     fields: {
-      title: "acer desktop computer",
-      price: 35,
-      company: "acer",
+      title: "React",
+      price: 350,
       description:
-        "Shaman hexagon fam activated charcoal literally cardigan. Pitchfork YOLO man bun hella. Trust fund vexillologist squid put a bird on it man braid, selvage pug. Schlitz kombucha chillwave pug shabby chic cornhole. Try-hard four loko listicle yuccie kitsch small batch narwhal celiac selfies distillery cloud bread farm-to-table art party leggings glossier.",
+        "React.js (inne stosowane nazwy: React, ReactJS) – biblioteka języka programowania JavaScript, która wykorzystywana jest do tworzenia interfejsów graficznych aplikacji internetowych. Została stworzona przez Jordana Walke, programistę Facebooka, a zainspirowana przez rozszerzenie języka PHP - XHP Z głównych cech wyróżniających bibliotekę React.js jest wirtualny DOM (Document Object Model, po polsku Obiektowy Model Dokumentu). React przechowuje cały DOM aplikacji w pamięci, po zmianie stanu wyszukuje różnice między wirtualnym i prawdziwym DOM i aktualizuje zmiany. Drugą z cech szczególnych React jest język JSX. Jest on nakładką na JavaScript, która dodaje możliwość wstawiania kodu html (lub komponentów React) bezpośrednio w kodzie, zamiast ciągu znaków",
       featured: true,
 
       image: { fields: { file: { url: "img/js.png" } } }

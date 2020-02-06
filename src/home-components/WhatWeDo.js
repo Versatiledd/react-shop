@@ -6,6 +6,7 @@ export default function WhatWeDo() {
     <section className="section-do">
       <div className="container-section">
         <div className="description">
+          <span className="service-title">what we do</span>
           <h2 className="title-what-we-do">Check our services and expertise</h2>
           <p className="description_paragraph">
             Nam liber tempor cum soluta nobis eleifend option congue nihil

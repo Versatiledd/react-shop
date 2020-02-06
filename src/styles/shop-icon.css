@@ -6,7 +6,8 @@
 
 .addToShop {
     position: absolute;
-    color: red;
+    color: black;
+    font-weight: 700;
     padding: 5px;
     top: -8px;
     right: -15px;
@@ -57,15 +58,18 @@
 }
 
 .shop-button {
+    font-family: 'Roboto';
+    padding: 15px;
+    font-size: 18px;
     display: flex;
     margin: 20px auto;
     justify-content: center;
     cursor: pointer;
-    height: 40px;
-    width: 120px;
     outline: none;
     border: none;
-    background-color: rgb(163, 94, 30);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    background-color: #38d5e2;
     transition: 0.3s all linear;
 }
 

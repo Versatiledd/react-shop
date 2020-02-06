@@ -1,0 +1,43 @@
+.section-service {
+    margin-top: 40px;
+}
+
+.wrapper-service {
+    display: flex;
+}
+
+.service-description {
+    width: 70%;
+    text-align: right;
+}
+
+.service-title {
+    color: #899ea7;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 58px;
+    text-transform: uppercase;
+    letter-spacing: 3.64px;
+}
+
+.service-main-title {
+    /* Style for "It is our" */
+    color: #010927;
+    font-family: "Segoe UI";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -2.4px;
+    padding: 30px 0;
+}
+
+p.service-describe {
+    /* Style for "Nam liber" */
+    color: #2f2f2f;
+    font-family: "Work Sans";
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
