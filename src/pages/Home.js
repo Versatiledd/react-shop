@@ -3,6 +3,7 @@ import Icons from "../home-components/Icons";
 import WhatWeDo from "../home-components/WhatWeDo";
 import Featured from "../home-components/Featured";
 import Services from "../home-components/Services";
+import Clients from "../home-components/Clients";
 import Footer from "../components/Footer";
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         </div> */}
         <WhatWeDo />
         <Services />
+        <Clients />
         <Featured></Featured>
         {/* <Footer /> */}
       </div>
