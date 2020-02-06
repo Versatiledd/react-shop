@@ -21,6 +21,7 @@ p.icon-description {
     font-size: 20px;
     text-transform: inherit;
     line-height: 190%;
+    text-align: justify;
 }
 
 .tomato {
