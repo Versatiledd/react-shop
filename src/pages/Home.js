@@ -22,7 +22,7 @@ function Home() {
         <Services />
         <Clients />
         <Featured></Featured>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
