@@ -7,44 +7,47 @@ export default function ContactWithUs() {
       <h3 className="service-main-title contact-additional">
         Get in touch with Us
       </h3>
-      <form action="" className="form-container">
-        <div className="form-child">
-          <label htmlFor="" className="label-style">
-            Name
-          </label>
-          <input type="text" name="" id="" className="input-style" />
+      <form action="">
+        <div className="form-container">
+          <div className="form-child">
+            <label htmlFor="" className="label-style">
+              Name
+            </label>
+            <input type="text" name="" id="" className="input-style" />
+          </div>
+          <div className="form-child">
+            <label htmlFor="" className="label-style">
+              E-mail adress
+            </label>
+            <input type="text" name="" id="" className="input-style" />
+          </div>
+          <div className="form-child">
+            <label htmlFor="" className="label-style">
+              Phone Number
+            </label>
+            <input type="text" name="" id="" className="input-style" />
+          </div>
+          <div className="form-child">
+            <label htmlFor="" className="label-style">
+              Subject
+            </label>
+            <input type="text" name="" id="" className="input-style" />
+          </div>
         </div>
         <div className="form-child">
-          <label htmlFor="" className="label-style">
-            E-mail adress
+          <label htmlFor="" className="text-label">
+            Message
           </label>
-          <input type="text" name="" id="" className="input-style" />
-        </div>
-        <div className="form-child">
-          <label htmlFor="" className="label-style">
-            Phone Number
-          </label>
-          <input type="text" name="" id="" className="input-style" />
-        </div>
-        <div className="form-child">
-          <label htmlFor="" className="label-style">
-            Subject
-          </label>
-          <input type="text" name="" id="" className="input-style" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            className="text-message"
+          ></textarea>
         </div>
       </form>
-      <div className="form-child">
-        <label htmlFor="" className="text-label">
-          Message
-        </label>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          className="text-message"
-        ></textarea>
-      </div>
+      <button className="btn-submit">Wyślij wiadomość</button>
     </div>
   );
 }
