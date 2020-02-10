@@ -1,0 +1,29 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 65px 0;
+}
+
+.form-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-additional {
+    width: 100%;
+    letter-spacing: 3px;
+    text-align: center;
+}

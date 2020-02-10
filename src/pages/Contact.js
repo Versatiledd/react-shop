@@ -1,7 +1,7 @@
 import React from "react";
-
+import ContactWithUs from "../components/ContactWithUs";
 function Contact() {
-  return <p>Skontaktuj się z nami</p>;
+  return <ContactWithUs />;
 }
 
 export default Contact;
