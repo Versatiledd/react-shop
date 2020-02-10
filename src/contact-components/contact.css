@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin: 100px 0px;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -20,10 +20,96 @@
 .form-child {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .contact-additional {
     width: 100%;
     letter-spacing: 3px;
     text-align: center;
+}
+
+.input-style {
+    /* Style for "input" */
+    width: 270px;
+    height: 30px;
+    margin: 30px 0;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #d4d5d8;
+    transition: 0.4s all ease-in;
+}
+
+input.input-style:hover {
+    border-bottom: 2px solid black;
+}
+
+.label-style {
+    /* Style for "your name" */
+    color: #3a4366;
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 26px;
+}
+
+
+.text-message {
+    width: 100%;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #d4d5d8;
+    transition: 0.4s all ease-in;
+}
+
+.text-message:hover {
+    border-bottom: 2px solid black;
+}
+
+.text-label {
+    padding: 20px 0;
+    color: #3a4366;
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 26px;
+}
+
+@media(min-width:320px) and (orientation: portrait) {
+    .form-container {
+        flex-direction: column;
+    }
+}
+
+@media(min-width:768px) and (orientation: portrait) {
+    .form-child {
+        align-items: center;
+    }
+
+    .label-style,
+    .text-label {
+        font-size: 24px;
+    }
+}
+
+@media(min-width:568px) and (orientation: landscape) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-child {
+        align-items: center;
+    }
+}
+
+@media(min-width:1366px) and (orientation: landscape) {
+    .form-container {
+        flex-direction: row;
+    }
 }

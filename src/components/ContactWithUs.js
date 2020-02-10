@@ -9,25 +9,41 @@ export default function ContactWithUs() {
       </h3>
       <form action="" className="form-container">
         <div className="form-child">
-          <label htmlFor="">Name</label>
-          <input type="text" name="" id="" />
+          <label htmlFor="" className="label-style">
+            Name
+          </label>
+          <input type="text" name="" id="" className="input-style" />
         </div>
         <div className="form-child">
-          <label htmlFor="">E-mail adress</label>
-          <input type="text" name="" id="" />
+          <label htmlFor="" className="label-style">
+            E-mail adress
+          </label>
+          <input type="text" name="" id="" className="input-style" />
         </div>
         <div className="form-child">
-          <label htmlFor="">Phone Number</label>
-          <input type="text" name="" id="" />
+          <label htmlFor="" className="label-style">
+            Phone Number
+          </label>
+          <input type="text" name="" id="" className="input-style" />
         </div>
         <div className="form-child">
-          <label htmlFor="">Subject</label>
-          <input type="text" name="" id="" />
+          <label htmlFor="" className="label-style">
+            Subject
+          </label>
+          <input type="text" name="" id="" className="input-style" />
         </div>
       </form>
       <div className="form-child">
-        <label htmlFor="">Message</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label htmlFor="" className="text-label">
+          Message
+        </label>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          className="text-message"
+        ></textarea>
       </div>
     </div>
   );
