@@ -76,3 +76,10 @@
 .shop-button:hover {
     color: white;
 }
+
+.close-cart {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 24px;
+}

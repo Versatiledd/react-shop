@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import gsap from "gsap";
 import "../styles/shop-icon.css";
 import { Link } from "react-router-dom";
@@ -29,6 +30,7 @@ export default function SideCart({ value }) {
   return (
     <div className="overlay" ref={el => (var1 = el)}>
       <h4 className="overlay-title">Twój koszyk</h4>
+      <AiOutlineClose className="close-cart" onClick={closeCart} />
       {value.cart.map(item => (
         <div key={item.id} className="shopCart">
           <img src={item.image} alt="" className="shopImage" />
