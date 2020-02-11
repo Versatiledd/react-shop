@@ -46,6 +46,12 @@ class ProductProvider extends Component {
     alert("Wiadomośc wysłana");
   };
 
+  handleCart = () => {
+    this.setState({
+      cartOpen: true
+    });
+  };
+
   closeCart = () => {
     this.setState({
       cartOpen: false
@@ -236,7 +242,7 @@ class ProductProvider extends Component {
         value={{
           handleCart: this.handleCart,
           closeCart: this.closeCart,
-          openCart: this.openCart,
+          cartOpen: this.cartOpen,
           ...this.state,
           addToCart: this.addToCart,
           setSingleProduct: this.setSingleProduct,

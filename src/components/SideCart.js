@@ -4,10 +4,10 @@ import "../styles/shop-icon.css";
 import { Link } from "react-router-dom";
 
 export default function SideCart({ value }) {
-  const { closeCart } = value;
+  const { cartOpen, closeCart } = value;
   let var1 = useRef(null);
   useEffect(() => {
-    if (value.cartOpen === true) {
+    if (cartOpen === true) {
       gsap.to(var1, {
         opacity: 1,
         width: 300,
@@ -15,7 +15,7 @@ export default function SideCart({ value }) {
         ease: "Power1.easeOut",
         zIndex: 11
       });
-    } else if (value.cartOpen === false) {
+    } else if (cartOpen === false) {
       gsap.to(var1, {
         duration: 0.18,
         right: 0,
