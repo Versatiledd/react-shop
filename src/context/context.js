@@ -17,13 +17,35 @@ class ProductProvider extends Component {
     featuredProducts: [],
     singleProduct: {},
     loading: true,
-    backgroundLoad: true
+    backgroundLoad: true,
+    formName: "",
+    formEmail: "",
+    formNumber: "",
+    formSubject: "",
+    formMessage: ""
   };
-  handleCart = () => {
+  // contact methods
+
+  // change state name
+
+  handleChangeForm = e => {
     this.setState({
-      cartOpen: !this.state.cartOpen
+      [e.target.name]: e.target.value
     });
   };
+
+  handleSubmitForm = e => {
+    e.preventDefault();
+    this.setState({
+      formName: "",
+      formEmail: "",
+      formNumber: "",
+      formSubject: "",
+      formMessage: ""
+    });
+    alert("Wiadomośc wysłana");
+  };
+
   closeCart = () => {
     this.setState({
       cartOpen: false
@@ -222,7 +244,9 @@ class ProductProvider extends Component {
           decrement: this.decrement,
           removeItem: this.removeItem,
           clearCart: this.clearCart,
-          showBackground: this.showBackground
+          showBackground: this.showBackground,
+          handleChangeForm: this.handleChangeForm,
+          handleSubmitForm: this.handleSubmitForm
         }}
       >
         {this.props.children}

@@ -7,7 +7,7 @@ export default function CartTotals() {
         const { clearCart, cartSubTotal, cartTax, cartTotal } = value;
         return (
           <div className="container-totals">
-            <button className="btn-totals" onClick={clearCart}>
+            <button className="btn-submit cart-margin" onClick={clearCart}>
               Wyczyść kartę
             </button>
             <div className="totals">
