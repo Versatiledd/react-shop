@@ -77,19 +77,33 @@ export default function Clients() {
       });
       leftSlide(0, 1);
       leftSlide(1, 1);
-      fadeOut(0, 1);
-      fadeIn(1, 1, 1.2);
+      leftSlide(2, 1);
+      leftSlide(2, 0);
+      // fadeOut(0, 1);
+      // fadeIn(1, 1, 1.2);
     } else if (imagesList.children[1].classList.contains("active")) {
       setState({
         activeTwo: false,
         activeThree: true
       });
+      rightSlide(0, 1);
+      leftSlide(1, 1, 2);
+      leftSlide(2, 1, 2);
+      // leftSlide(2, 1, 2);
+      // fadeOut(1, 1);
+      // fadeIn(2, 1, 1.2);
     } else if (imagesList.children[2].classList.contains("active")) {
       setState({
         activeOne: true,
         activeThree: false
       });
+      leftSlide(2, 1, 3);
+      leftSlide(0, 1, 0);
+      leftSlide(1, 0, 0);
     }
+
+    // fadeOut(2, 1);
+    // fadeIn(0, 1);
   };
 
   const prevSlide = () => {
@@ -98,10 +112,10 @@ export default function Clients() {
         activeOne: false,
         activeThree: true
       });
-      leftSlide(2, 0, 3);
-      leftSlide(2, 1, 2);
-      rightSlide(0, 1);
-      rightSlide(1, 1);
+      rightSlide(0, 0);
+      // leftSlide(2, 1, 2);
+      // rightSlide(0, 1);
+      // rightSlide(1, 1);
     } else if (imagesList.children[1].classList.contains("active")) {
       setState({
         activeTwo: false,
