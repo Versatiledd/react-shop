@@ -36,6 +36,10 @@ p.icon-description {
     color: seagreen;
 }
 
+.container-btn {
+    margin-bottom: 80px;
+}
+
 .btn-submit {
     font-size: 25px;
     padding: 20px 20px;
@@ -46,6 +50,7 @@ p.icon-description {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 26px;
     background-color: #207ee8;
+    cursor: pointer;
 }
 
 

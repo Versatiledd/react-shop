@@ -43,7 +43,7 @@ class ProductProvider extends Component {
       formSubject: "",
       formMessage: ""
     });
-    alert("Wiadomośc wysłana");
+    alert("Wiadomość została wysłana. Dziękujemy!");
   };
 
   handleCart = () => {
